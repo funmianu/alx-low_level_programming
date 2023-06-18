@@ -7,18 +7,22 @@
 
 int main(void)
 {
-int lowerCase = 'a';
-int upperCase = 'A';
-while (lowerCase <= 'z')
-{
-putchar(lowerCase);
-lowerCase += 1;
-}
-while (upperCase <= 'z')
-{
-putchar(lowerCase);
-upperCase += 1;
-}
-putchar('\n');
-return (0);
+    char lowercase = 'a';
+    char uppercase = 'A';
+
+    while (lowercase <= 'z')
+    {
+        putchar(lowercase);
+        lowercase++;
+    }
+
+    while (uppercase <= 'Z')
+    {
+        putchar(uppercase);
+        uppercase++;
+    }
+
+    putchar('\n');
+
+    return 0;
 }
