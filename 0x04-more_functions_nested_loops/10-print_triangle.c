@@ -1,29 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * print_triangle - Prints a triangle
+ * @size: The size of the triangle
  */
-int main(void)
+void print_triangle(int size)
 {
-int i;
+int i, j;
 
-for (i = 1; i <= 100; i++)
+if (size <= 0)
 {
-if (i % 3 == 0 && i % 5 == 0)
-printf("FizzBuzz")else if (i % 3 == 0)
-printf("Fizz");
-else if (i % 5 == 0)
-printf("Buzz");
-else
-printf("%d", i);
-
-if (i != 100)
-printf(" ");
+_putchar('\n');
+return;
 }
 
-printf("\n");
+for (i = 0; i < size; i++)
+{
+for (j = 0; j <= i; j++)
+_putchar('#');
 
-return (0);
+_putchar('\n');
+}
 }
