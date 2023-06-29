@@ -30,4 +30,3 @@ capitalize_next = true;
 
 return (str);
 }
-
